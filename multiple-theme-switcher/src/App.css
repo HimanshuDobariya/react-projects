@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding: 32px;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  color: #222;
+}
+
+.theme-option {
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.theme-option div {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.theme-option div.active {
+  opacity: 1;
+}
+
+#theme-white {
+  background-color: #eee;
+}
+
+#theme-blue {
+  background-color: #1e41c1;
+}
+
+#theme-orange {
+  background-color: #b64b1e;
+}
+
+#theme-purple {
+  background-color: #7852ae;
+}
+
+#theme-green {
+  background-color: #5faf3b;
+}
+
+#theme-black {
+  background-color: #000;
+}
+
+.content-box {
+  margin: 40px auto;
+  max-width: 800px;
+  background-color: #eee;
+  color: #222;
+  border-radius: 8px;
+  padding: 30px 30px 40px 30px;
+}
+
+.content-box h3 {
+  line-height: 1.2;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.content-box p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.container.theme-blue {
+  background-color: #bec7e7;
+}
+.container.theme-blue .content-box {
+  background-color: #d8def4;
+}
+.container.theme-blue .content-box h3 {
+  color: #1e41c1;
+}
+.container.theme-blue .content-box p {
+  color: #000;
+}
+
+.container.theme-orange {
+  background-color: #f4c9b7;
+}
+.container.theme-orange .content-box {
+  background-color: #f4dfd6;
+}
+.container.theme-orange .content-box h3 {
+  color: #b64b1e;
+}
+.container.theme-orange .content-box p {
+  color: #000;
+}
+
+.container.theme-purple {
+  background-color: #d0b7f4;
+}
+.container.theme-purple .content-box {
+  background-color: #ecdfff;
+}
+.container.theme-purple .content-box h3 {
+  color: #7852ae;
+}
+.container.theme-purple .content-box p {
+  color: #000;
+}
+
+.container.theme-green {
+  background-color: #c3e3c1;
+}
+.container.theme-green .content-box {
+  background-color: #e2f6e1;
+}
+.container.theme-green .content-box h3 {
+  color: #5faf3b;
+}
+.container.theme-green .content-box p {
+  color: #000;
+}
+
+.container.theme-black {
+  background-color: #5c5c5c;
+}
+.container.theme-black .content-box {
+  background-color: #333;
+}
+.container.theme-black .content-box h3 {
+  color: #fff;
+}
+.container.theme-black .content-box p {
+  color: #ccc;
+}
