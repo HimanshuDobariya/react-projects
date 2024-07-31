@@ -17,7 +17,15 @@ const Navbar = () => {
         <ul className={`${showMenu ? "navlinks show-menu" : "navlinks"}`}>
           {navItems.map(({ text, path }, index) => (
             <li key={index}>
-              <NavLink to={path}> {text} </NavLink>
+              <NavLink
+                to={path}
+                onClick={() => {
+                  setShowMenu(false);
+                }}
+              >
+                {" "}
+                {text}{" "}
+              </NavLink>
             </li>
           ))}
         </ul>
